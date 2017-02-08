@@ -1,0 +1,55 @@
+body {
+  background-color: #eee;
+}
+form {
+  font-family: arial; 
+}
+form .auto-complete {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  margin:10px;
+  padding:10px; 
+}
+form .auto-complete h1 {
+  font-size: 25px;
+  color: #046eb5; 
+}
+form .auto-complete #input {
+  width: 340px;
+  height: 20px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  padding: 5px; 
+}
+form .auto-complete .results {
+  list-style-type: none;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  max-width: 352px; 
+}
+form .auto-complete .results li {
+  padding: 5px;
+  display: flex;
+  border: 1px solid #bbb; 
+  }
+form .auto-complete .results li img {
+  height: 50px;
+  width: 75px; 
+}
+form .auto-complete .results li > div:nth-child(2) {
+  margin-left: 10px; 
+  }
+form .auto-complete .results li a {
+  color: #000;
+  cursor: pointer; 
+}
+form .auto-complete .results li a:hover {
+  color: #046eb5;
+  text-decoration: underline; 
+}
+  form .auto-complete .results li a:not(:first-child):after,
+  form .auto-complete .results li a:not(:last-child):after {
+  content: ", "; 
+}

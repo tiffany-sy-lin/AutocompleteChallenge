@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Viki Autocomplete</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <form>
+      <div class="auto-complete">
+        <h1>Viki Autocomplete Search for Ebates</h1>
+          <input placeholder="Search" type="text" id="input"/>
+          <ul id="searchResults"></ul>
+      </div>
+    </form>
+    <script>
+      var input = document.getElementById('input');
+      document.getElementById('searchResults').classList.add('results');
+      input.addEventListener("keyup",function() {
+        var value = input.value;
+        search(value);
+      })
+    </script>
+  </body>
+</html>
