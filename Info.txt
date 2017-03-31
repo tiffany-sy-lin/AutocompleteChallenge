@@ -1,0 +1,1 @@
+Goal: Implement a search box with autocomplete in a single web page
